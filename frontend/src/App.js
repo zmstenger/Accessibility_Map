@@ -1,22 +1,22 @@
-import profX from './profX.gif'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SearchBar from './components/SearchBar';
+import MapView from './components/MapView';
+import LocationDetails from './components/LocationDetails';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={profX} className='App-logo' alt='logo' />
-        <p>Accessibility Map</p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
-    </div>
-  )
+    <Router>
+      <div className="App">
+        <SearchBar />
+
+        <div className="content">
+          <LocationDetails />
+          <MapView />
+        </div>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
