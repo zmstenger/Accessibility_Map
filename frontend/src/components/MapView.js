@@ -1,28 +1,21 @@
 import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import '../styles/MapView.css';
+import 'leaflet/dist/leaflet.css';
 
-const containerStyle = {
-  width: '100%',
-  height: '100vh'
-};
-
-const center = {
-  lat: 39.1031,
-  lng: -84.5120 
-};
+const UCCoordinates = [39.1317, -84.515]; // University of Cincinnati coordinates
 
 const MapView = () => {
   return (
-    <LoadScript googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY}>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={12}
-      >
-        <Marker position={{ lat: 39.1031, lng: -84.5120 }} />
-      </GoogleMap>
-    </LoadScript>
+    <MapContainer center={UCCoordinates} zoom={16} style={{height: '500px', width: '100%'}}>
+      <TileLayer
+        url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <Marker position={UCCoordinates}>
+        <Popup>University of Cincinnati</Popup>
+      </Marker>
+    </MapContainer>
   );
 };
 
