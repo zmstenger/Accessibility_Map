@@ -16,6 +16,7 @@ namespace backend.Controllers
             _context = context;
         }
 
+//commit
         // POST: api/location
         [HttpPost]
         public async Task<IActionResult> CreateLocation([FromBody] Location location)
