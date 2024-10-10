@@ -13,7 +13,7 @@ env:
   APP_LOCATION: "/frontend/" # location of your client code
   OUTPUT_LOCATION: "/build/" # location of client code build output
   CI: false
-  
+
 on:
   push:
     branches:
