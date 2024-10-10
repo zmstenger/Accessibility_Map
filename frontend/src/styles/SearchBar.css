@@ -1,0 +1,20 @@
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #5C69AB;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+}
