@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using backend.Context;
 using backend.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace backend.Controllers
 {
@@ -16,8 +17,6 @@ namespace backend.Controllers
             _context = context;
         }
 
-//commit
-        // POST: api/location
         [HttpPost]
         public async Task<IActionResult> CreateLocation([FromBody] Location location)
         {
@@ -32,6 +31,13 @@ namespace backend.Controllers
 
             // Return a response with the created location
             return Ok(location);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetLocations()
+        {
+            var locations = await _context.Locations.ToListAsync();
+            return Ok(locations);
         }
     }
 }
