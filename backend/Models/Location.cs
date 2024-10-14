@@ -7,7 +7,9 @@ namespace backend.Models
         [Key]
         public int LocationID { get; set; }
         public string? LocationName { get; set; }  // Nullable
+        [Required]
         public double Latitude { get; set; }
+        [Required]
         public double Longitude { get; set; }
     }
 
