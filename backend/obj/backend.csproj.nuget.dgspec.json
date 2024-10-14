@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/zach.stenger/Library/CloudStorage/OneDrive-UniversityofCincinnati/Classes/Fall 2024/Sr. Capstone/Accessibility_Map/backend/backend.csproj": {}
+    "/Users/zach.stenger/Desktop/Accessibility_Map/backend/backend.csproj": {}
   },
   "projects": {
-    "/Users/zach.stenger/Library/CloudStorage/OneDrive-UniversityofCincinnati/Classes/Fall 2024/Sr. Capstone/Accessibility_Map/backend/backend.csproj": {
+    "/Users/zach.stenger/Desktop/Accessibility_Map/backend/backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zach.stenger/Library/CloudStorage/OneDrive-UniversityofCincinnati/Classes/Fall 2024/Sr. Capstone/Accessibility_Map/backend/backend.csproj",
+        "projectUniqueName": "/Users/zach.stenger/Desktop/Accessibility_Map/backend/backend.csproj",
         "projectName": "backend",
-        "projectPath": "/Users/zach.stenger/Library/CloudStorage/OneDrive-UniversityofCincinnati/Classes/Fall 2024/Sr. Capstone/Accessibility_Map/backend/backend.csproj",
+        "projectPath": "/Users/zach.stenger/Desktop/Accessibility_Map/backend/backend.csproj",
         "packagesPath": "/Users/zach.stenger/.nuget/packages/",
-        "outputPath": "/Users/zach.stenger/Library/CloudStorage/OneDrive-UniversityofCincinnati/Classes/Fall 2024/Sr. Capstone/Accessibility_Map/backend/obj/",
+        "outputPath": "/Users/zach.stenger/Desktop/Accessibility_Map/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zach.stenger/.nuget/NuGet/NuGet.Config"
