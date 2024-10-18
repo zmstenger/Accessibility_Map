@@ -3712,6 +3712,7 @@
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.10",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
+      "Microsoft.EntityFrameworkCore.Relational >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "MySqlConnector >= 2.3.7",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
@@ -3761,6 +3762,10 @@
             "version": "[7.0.10, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.10, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[7.0.10, )"
           },
